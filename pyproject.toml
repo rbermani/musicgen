@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "musicgen_rbermani"
+version = "2024.0.0"
+dependencies = [
+  "pillow>=10.3.0",
+  "tokenizers>=0.19.1",
+  "torch>=2.3.0",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Robert Bermani", email = "bobbermani@gmail.com"},
+]
+
+description = "ML Sheet Music Gen Model"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["egg", "bacon", "sausage", "tomatoes", "Lobster Thermidor"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/me/spam.git"
+"Bug Tracker" = "https://github.com/me/spam/issues"
+Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+
+[project.gui-scripts]
+spam-gui = "spam:main_gui"
+
+[project.entry-points."spam.magical"]
+tomatoes = "spam:main_tomatoes"
